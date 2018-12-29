@@ -1,4 +1,7 @@
 body {
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 4em 1em;
     background: #000;
     color: #fff;
 }
@@ -10,6 +13,11 @@ body {
 
 .App-title {
     font-size: 26px;
+}
+
+.form-search {
+    margin: 0 auto;
+    max-width: 50em;
 }
 
 /* Profile */
@@ -105,7 +113,9 @@ body {
 @keyframes fade-in {
     from {
         opacity: 0;
-    } to {
+    }
+
+    to {
         opacity: 0.8;
     }
 }

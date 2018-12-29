@@ -21,7 +21,7 @@ class App extends Component {
             method: 'GET'
         }).then(response => response.json()).then(json => {
             const artist_id = json.data[0].artist.id;
-            this.setState({tracks: json.data});
+            this.setState({ tracks: json.data });
 
             if (artist_id != null) {
                 const FETCH_ARTIST_URL = `${BASE_URL}/artist/${artist_id}`;
@@ -38,7 +38,7 @@ class App extends Component {
                 <div className="App-title">
                     Music Master
                 </div>
-                <FormGroup>
+                <FormGroup className="form-search">
                     <InputGroup>
                         <FormControl
                             type="text"
